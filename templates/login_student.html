@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <div style="text-align: center;">
+        <h2 style="margin-bottom: 20px;">Student Login</h2>
+        <form method="POST" action="{{ url_for('login_student') }}">
+            <div style="margin-bottom: 15px;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <button type="submit" style="padding: 10px 20px; margin-top: 20px;">Login</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
